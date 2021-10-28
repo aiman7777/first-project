@@ -1,0 +1,90 @@
+<ion-app>
+ <ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+  <ion-title color="medium">Checkbox</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+  <ion-list>
+  <ion-list-header>Survey Requirements</ion-list-header>
+  <ion-item>
+    <p>1) What is your favourite food</p>
+  </ion-item>
+
+  <ion-item>
+  <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+  <ion-label>Nasi Lemak</ion-label>
+  </ion-item>
+
+  <ion-item>
+  <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+  <ion-label>Nasi Goreng</ion-label>
+  </ion-item>
+
+  <ion-item>
+  <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+  <ion-label>Mee Goreng</ion-label>
+  </ion-item>
+
+  <ion-item>
+  <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+  <ion-label>Char kuey teow</ion-label>
+  </ion-item>
+  <ion-item>
+    <p>2) What is your favourite drink</p>
+  </ion-item>
+
+  <ion-item>
+  <ion-checkbox color="primary" slot="start"></ion-checkbox>
+  <ion-label>Teh Ais</ion-label>
+  </ion-item>
+  <ion-item>
+  <ion-checkbox color="tertiary" checked slot="start"></ion-checkbox>
+  <ion-label>Milo</ion-label>
+  </ion-item>
+  <ion-item>
+  <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+  <ion-label>Nescafe</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+ <ion-label>Teh Tarik</ion-label>
+ </ion-item>
+
+ <ion-item>
+  <p>3)What is your favorite genre movie</p>
+</ion-item>
+
+ <ion-item>
+ <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+ <ion-label>Action</ion-label>
+ </ion-item>
+
+ <ion-item>
+  <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+  <ion-label>Drama</ion-label>
+  </ion-item>
+
+ <ion-item>
+ <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+ <ion-label>Horor</ion-label>
+ </ion-item>
+
+ <ion-item>
+  <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+  <ion-label>Adventure</ion-label>
+  </ion-item>
+
+
+
+    <ion-item>
+      <ion-label>End of the Question</ion-label>
+      </ion-item>
+      
+      <ion-alert-controller></ion-alert-controller>
+      <ion-button (click)="CreatePrompt()" expand="block" shape="round" color="danger">Submit</ion-button>
+      
+ </ion-list>
+ </ion-content>
+ </ion-app>

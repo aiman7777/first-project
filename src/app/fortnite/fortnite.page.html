@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title><br>Fortnite<br></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium">Fortnite</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-card>
+  <img src="../../assets/FM.jpg" alt="ion">
+  <ion-card-header>
+    <ion-card-title>About Game</ion-card-title>
+  </ion-card-header>
+
+  <video
+  width="100%"
+  controls="controls"
+  preload="metadata"
+  autoplay="autoplay"
+  webkit-playsinline="webkit-playsinline"
+  class="videoPlayer">
+  <source src="assets/FM.mp4" type="video/mp4" />
+  </video>
+  <ion-card-content>
+    Fortnite on mobile brings everything you love about the game onto your favorite on-the-go device. Join and chat with your friends -- regardless of what platform they’re on -- and make progress on your Battle Pass the same way you would on a PC or console!
+  </ion-card-content>
+
+</ion-card>

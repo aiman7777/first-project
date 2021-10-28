@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>FCOM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="ion-text-center">
+    <img src="assets/fcom.png" width= 30%>
+  </p>
+<ion-grid fixed>
+  <ion-row>
+    
+    <ion-col size="6">
+      <ion-button [routerLink]="['/labtask8']" expand="full" fill="outline">
+        <ion-icon name="add-outline"></ion-icon>
+        PRO
+      </ion-button>
+      </ion-col>
+
+      
+    <ion-col size="6">
+      <ion-button [routerLink]="['/labtask8']" expand="full" fill="outline">
+        <ion-icon slot="end" name="call-outline"></ion-icon>
+          Contact Us
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="success" class="ion-text-center">
+  <ion-title>copyright @2021</ion-title>
+</ion-toolbar>
+</ion-footer>
