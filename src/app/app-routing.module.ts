@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'labtask5',
+    redirectTo: 'test',
     pathMatch: 'full'
   },
   {
@@ -83,6 +83,10 @@ const routes: Routes = [
   {
     path: 'edit-post/:id',
     loadChildren: () => import('./edit-post/edit-post.module').then( m => m.EditPostPageModule)
+  },
+  {
+    path: 'test',
+    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
   }
 ];
 
